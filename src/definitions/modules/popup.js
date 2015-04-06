@@ -315,6 +315,9 @@ $.fn.popup = function(parameters) {
             module.hide();
           }
           else {
+            if (settings.hoverable) {
+              module.hide();
+            }
             module.debug('Click was inside popup, keeping popup open');
           }
         },
